@@ -1,8 +1,9 @@
 import React from 'react'
+import { Container, Header } from 'semantic-ui-react'
 
 const PlaceholderComponent = ({data}) => (
-  <div style={{textAlign: 'center'}}>
-    <h1>Boilerplate</h1>
+  <Container textAlign='center'>
+    <Header as='h1'>Boilerplate</Header>
     <a href='https://en.wikipedia.org/wiki/Single-page_application' target='_blank' rel='noopener noreferrer'>SPA</a><br />
     <small>with</small>
     <p>
@@ -18,7 +19,7 @@ const PlaceholderComponent = ({data}) => (
         {data.map(item => <div key={item.id}>{item.name}</div>)}
       </small>
     )}
-  </div>
+  </Container>
 )
 
 export default PlaceholderComponent

@@ -2,13 +2,11 @@
 
 exports[`PlaceholderComponent renders correctly 1`] = `
 <div
-  style={
-    Object {
-      "textAlign": "center",
-    }
-  }
+  className="ui center aligned container"
 >
-  <h1>
+  <h1
+    className="ui header"
+  >
     Boilerplate
   </h1>
   <a
